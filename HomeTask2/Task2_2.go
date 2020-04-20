@@ -14,6 +14,5 @@ func max(sl []string) string {
 
 func main() {
 	sl := []string{"one", "two", "three"}
-	//sl := []string{"one", "two"}
 	fmt.Printf("The longest word: %v", max(sl))
 }
