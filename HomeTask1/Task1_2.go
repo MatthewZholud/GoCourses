@@ -12,7 +12,7 @@ type Square struct {
 }
 
 func (s Square) End() (int, int) {
-	return s.start.x + 5, s.start.y - 5
+	return s.start.x + int(s.a), s.start.y - int(s.a)
 }
 
 func (s Square) Perimeter() uint {
