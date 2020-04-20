@@ -8,14 +8,10 @@ import (
 func median(i []int) float64 {
 	sort.Ints(i)
 	Num := len(i) / 2
-	if Odd(len(i)) {
+	if len(i)%2 != 0 {
 		return float64(i[Num])
 	}
-	return float64(i[Num-1] + i[Num]) / 2
-}
-
-func Odd(number int) bool {
-	return number%2 != 0
+	return float64(i[Num-1]+i[Num]) / 2
 }
 
 func main() {
