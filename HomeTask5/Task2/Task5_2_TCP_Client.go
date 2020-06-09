@@ -25,7 +25,7 @@ func main() {
 			log.Fatal(err)
 		}
 
-		fmt.Fprintf(conn, text+"\n")
+		fmt.Fprint(conn, text+"\n")
 
 		if strings.Trim(text, "\n") == "exit" {
 			os.Exit(0)
